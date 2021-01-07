@@ -6,6 +6,7 @@
   <title>Review Page</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 
       <link rel="stylesheet" href="./style.css">
@@ -16,24 +17,30 @@
 
 <body>
 
+
   <div class="table-users">
-   <div class="header">Reviews</div>
+
+   <div class="header">
+       <span style="float:left;color:white;font-size:16px;"><a style="color:white" href="/">Home</a></span>
+       <span style="float:center; margin-left:-2rem;">Reviews</span></div>
 
    <table cellspacing="0">
       <tr>
-         <th>Product</th>
-         <th>Name</th>
-         <th>Rating</th>
+          <th>Keyword Searched</th>
+         <th width="35">Product</th>
+         <th width="15">Customer</th>
+         <th width="12">Rating</th>
          <th>Comment Heading</th>
-         <th width="230">Comments</th>
+         <th width="30%">  Comments  </th>
       </tr>
-         {% for review in reviews %}
+         {% for review in all_reviews %}
       <tr>
-          <td>{{review['Product']}}</td>
-         <td>{{review['Name']}}</td>
-         <td>{{review['Rating']}}</td>
+          <td>{{review['Keyword_searched']}}</td>
+          <td width="35">{{review['Product']}}</td>
+         <td width="15">{{review['Customer_Name']}}</td>
+         <td width="12"> {{review['Rating']}}</td>
          <td>{{review['CommentHead']}}</td>
-         <td>{{review['Comment']}} </td>
+         <td width="30%">{{review['Comment']}} </td>
        {% endfor %}
    </table>
 </div>

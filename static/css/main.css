@@ -1,11 +1,16 @@
 body, html {
     margin: 0;
     font-family: sans-serif;
+background: url("static/bg.jpg) ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .content {
     margin: 0 auto;
-    width: 400px;
+    width: 600px;
 }
 
 table, td, th {

@@ -1,5 +1,9 @@
-body {
-  background-color: #91ced4;
+body,html {
+    background: url("https://cdn.pixabay.com/photo/2016/01/22/17/17/background-1156240_1280.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body * {
   box-sizing: border-box;
@@ -8,7 +12,7 @@ body * {
 .header {
   background-color: #327a81;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -27,7 +31,7 @@ img {
   max-width: calc(100% - 2em);
   margin: 1em auto;
   overflow: hidden;
-  width: 800px;
+  width: 1000px;
 }
 
 table {
@@ -35,14 +39,14 @@ table {
 }
 table td, table th {
   color: #2b686e;
-  padding: 10px;
+  padding: 5px;
 }
 table td {
   text-align: center;
   vertical-align: middle;
 }
 table td:last-child {
-  font-size: 0.95em;
+  font-size: 0.90em;
   line-height: 1.4;
   text-align: left;
 }
