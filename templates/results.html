@@ -24,23 +24,23 @@
        <span style="float:left;color:white;font-size:16px;"><a style="color:white" href="/">Home</a></span>
        <span style="float:center; margin-left:-2rem;">Reviews</span></div>
 
-   <table cellspacing="0">
+   <table cellspacing="0" >
       <tr>
-          <th>Keyword Searched</th>
-         <th width="35">Product</th>
-         <th width="15">Customer</th>
-         <th width="12">Rating</th>
-         <th>Comment Heading</th>
-         <th width="30%">  Comments  </th>
+          <th width="10%">Keyword Searched</th>
+         <th width="15%">Product</th>
+         <th width="15%">Customer</th>
+         <th width="5%">Rating</th>
+         <th width="15%">Comment Heading</th>
+         <th >  Comments  </th>
       </tr>
          {% for review in all_reviews %}
       <tr>
-          <td>{{review['Keyword_searched']}}</td>
-          <td width="35">{{review['Product']}}</td>
-         <td width="15">{{review['Customer_Name']}}</td>
-         <td width="12"> {{review['Rating']}}</td>
-         <td>{{review['CommentHead']}}</td>
-         <td width="30%">{{review['Comment']}} </td>
+          <td width="10%">{{review['Keyword_searched']}}</td>
+          <td width="15%">{{review['Product']}}</td>
+         <td width="15%">{{review['Customer_Name']}}</td>
+         <td width="5%"> {{review['Rating']}}</td>
+         <td width="15%">{{review['CommentHead']}}</td>
+         <td width="" >{{review['Comment']}} </td>
        {% endfor %}
    </table>
 </div>

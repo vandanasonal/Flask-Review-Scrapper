@@ -40,15 +40,18 @@ table {
 table td, table th {
   color: #2b686e;
   padding: 5px;
+  margin: 5px;
 }
 table td {
   text-align: center;
   vertical-align: middle;
+  font-size: 0.85em;
 }
 table td:last-child {
-  font-size: 0.90em;
+  font-size: 0.85em;
   line-height: 1.4;
   text-align: left;
+
 }
 table th {
   background-color: #daeff1;
